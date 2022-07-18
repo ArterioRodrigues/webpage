@@ -1,0 +1,75 @@
+body, * {
+    font-family: "Lucida Sans Typewriter","Lucida Console",Monaco,"Bitstream Vera Sans Mono",monospace;
+    font-weight: 300;
+    font-size: 13px;
+    color: #ffffff;
+    line-height: 26px;
+    margin: 0px;
+    padding: 0px;
+}
+
+h1{
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 110px;
+    line-height: 100px;
+
+}
+
+p, a, b{
+    font-weight: 300;
+    color: #303030;
+}
+
+.nav-bar { 
+    position: fixed;
+}
+
+.nav-item {
+    background-color: red;
+    display: inline-block;
+    padding: 1rem;
+}
+#home, #projects{
+    height: 100vh;
+    background-color: #aba;
+}
+
+.padding{
+    padding:100px;
+    margin: auto;
+    width: 1150px
+}
+.inline{ 
+    display: inline-block;
+}
+
+.subtitle , title{
+   text-align: right;
+}
+.info{
+    position: relative;
+    top: 200px;
+}
+
+#connect{
+    padding: 100px 0px;
+    text-align: center;
+    font-size: 12px;
+    line-height: 22px;
+    display: block;
+}
+
+.container{
+    width: 900px;
+    margin: auto;
+
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.font-color{
+    color: #ffffff;
+}
