@@ -10,25 +10,29 @@
     <title>Document</title>
 </head>
 <body>
-   
-   
-    <div class = 'nav-bar'>
-        <ul>
-            <a href ='#home'>     <li class="nav-item"> HOME</li></a> 
-            <a href ='#projects'> <li class="nav-item"> PROJECTS</li></a>
-            <a href ='#connect'>  <li class="nav-item"> CONNECT</li></a>
-        </ul>
-
-    </div>
     
-    <div class = 'resume'>
-        <a href="./asset/resume.pdf" download="resume">  <button class = "custom-btn  btn" type="button">MY RESUME</button></a>
-    </div>
+    <nav>
+        <ul>
+            <a href ='#home'>     <li> HOME</li></a> 
+            <a href ='#projects'> <li> PROJECTS</li></a>
+            <a href ='#connect'>  <li> CONNECT</li></a>
+        </ul>
+    </nav>
+  
+    <a class = 'resume' href="./asset/resume.pdf" download="resume">  
+        <button class = "custom-btn  btn " type="button">MY RESUME</button>
+    </a>
+
+    
     
     <div id = 'home'>
         <div class = 'padding'>
             
-            <div class = 'subtitle'>Computer Scientist</div>
+            <div class = 'subtitle'>
+                Computer Scientist
+                <hr/>
+            </div>
+            
 
             <h1 class = "title"> 
                 Hi, </br>
@@ -36,7 +40,7 @@
                 Rodrigues 
             </h1>
 
-            <p class = "info font-color">
+            <p class = "info">
                 I'm Arterio a teacher, mentor, and motivated computer science major 
                 with experience working with C++, Python, Javascript, React and Bash 
                 languages and multiple CI/CD pipelines. Knowledgable on full stack 
@@ -61,11 +65,11 @@
                 Projects
             </h1>
 
-            <div class = "projects-list ">
+            <div class = "info ">
                 <table>
-                    <tr>
+                    <tr class = 'row'>
                         <td class = "row-item"> 
-                            <p class = "bold"  style="color:white;">-- Toicator -- </p><br/>
+                            <p class = "bold">-- Toicator -- </p><br/>
                             Have you ever been outside and you really needed to use the bathroom? Or that you didn't know that you had to buy something before using the bathroom? 
                             Or if you walked into a really gross bathroom? Well- this app we built could help with that!
                             <br/>
@@ -74,15 +78,15 @@
                             <br/><br/>
                             This app used Swift, Googles Maps, and Firebase. 
                             <a href="https://github.com/ArterioRodrigues/stock_prediction">  
-                                <button class = "custom-btn btn row-btn" type="button">CODE</button>
+                                <button class = " btn row-btn" type="button">CODE</button>
                             </a>                           
                         </td>
                        
                     </tr>
 
-                    <tr>
+                    <tr class = 'row'>
                         <td class = "row-item"> 
-                            <p class = "bold"  style="color:white;">-- Stock Market Prediction -- </p><br/>
+                            <p class = "bold">-- Stock Market Prediction -- </p><br/>
                             This is a python program that predicts upto 60 days for a given stock market ticker closing prices. The project used an LSTM model to make the prediction.
                             The model was built on MSFT closing data from as far back as 2000-01-01 in which 80% of the data was used for predicting the other 20%. The data set was 
                             transfored using scaler transform to account for a faster run time and easier computation. Once the model was created it was used to predict APPLE stock 
@@ -90,7 +94,7 @@
                             This app used python, machine learning with tensorflow, matplotlib, numpy, and data collection with yfinance. 
 
                             <a href="https://github.com/ArterioRodrigues/winter-2021-codefest-submissions-the-three-quaranteers.git">  
-                                <button class = "custom-btn btn row-btn" type="button">CODE</button>
+                                <button class = "btn row-btn" type="button">CODE</button>
                             </a>   
                         </td>
                         
@@ -99,7 +103,7 @@
             </div>
         </div>
     </div>
-
+<!--
     <div id = "connect" >
         <div class = 'container' >
 
@@ -121,6 +125,6 @@
             </div>
         </div>
     </div>
-        
+     -->
 </body>
 </html>
