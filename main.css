@@ -22,6 +22,10 @@ p, a, b{
     color: #303030;
 }
 
+a{
+    text-decoration: none;
+}
+
 
 .nav-bar{ 
     
@@ -39,7 +43,7 @@ p, a, b{
 .nav-item {
     background-color: red;
     display: inline-block;
-    padding: 1rem;
+    padding: 10px 25px;
  
 }
 
@@ -53,10 +57,12 @@ p, a, b{
 
 
 #home, #projects{
-    height: 100vh;
+    height: 110vh;
     background-color: #aba;
 }
-
+.projects-list{
+    padding-top: 50px;
+}
 .padding{
     padding:100px;
     margin: auto;
@@ -102,7 +108,9 @@ p, a, b{
 .font-color{
     color: #ffffff;
 }
-
+.inline-block{
+    display: inline-block;
+}
 .background{
     background-color: white;
 }
@@ -127,6 +135,7 @@ img{
 .row-item{
     width: 80%;
     padding: 10px;
+
 }
 
 .btn{
@@ -171,4 +180,25 @@ hr{
     width: 70%;
     margin-left: auto;
     margin-right: auto;
+}
+
+.row-btn{
+    float: right;
+}
+.row-btn:hover{
+    background-color: #000;
+    
+}
+
+.logo{
+    width: auto;
+    height: 40px;
+    display: inline-block;
+    padding: 0 20px;
+    transition: all 0.3s ease;
+}
+
+.logo:hover{
+    
+    height: 50px;
 }
