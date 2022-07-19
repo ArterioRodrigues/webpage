@@ -68,11 +68,16 @@ p, a, b{
 
 .subtitle , title{
    text-align: right;
-   
+   width: 70vw;
+}
+
+.title{
+    width: 70vw;
 }
 .info{
     position: relative;
-    top: 200px;
+    top: 10vh;
+    width: 70vw;
 }
 
 #connect{
@@ -109,7 +114,7 @@ table, td{
   
 table {
     
-    width: 100%;
+    width: 70vw;
     border-collapse: collapse;
 }
 
