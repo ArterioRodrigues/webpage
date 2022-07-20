@@ -7,8 +7,28 @@ body, * {
     line-height: 26px;
     margin: 0px;
     padding: 0px;
+    text-decoration: none;
+    scroll-behavior: smooth ;
     
 }
+
+.bold{
+    font-weight: bold;
+}
+
+.inline-block{
+    display: inline-block;
+}
+
+hr{
+    
+    border-style: none;
+    border-top: 5px solid white;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+ }
+ 
 /*--------------------------------------------*/
 /*---------------NAV BAR----------------------*/
 /*--------------------------------------------*/
@@ -24,7 +44,7 @@ li::after{
     height: 3px;
     background-color: red;
     position: absolute;
-    right: 0;
+    left: 0;
     bottom: -6px;
     transition: 0.5s;
     
@@ -39,10 +59,11 @@ li:hover:after{
 }
 
 nav{ 
-    transform: rotate(90deg);
+    /*transform: rotate(90deg);*/
     position: fixed;        
-    right: 0;
-    top: 50%;
+    padding: 10px;
+   
+
 }
 
 /*--------------------------------------------*/
@@ -89,8 +110,9 @@ nav{
 /*-------------------HOME---------------------*/
 /*--------------------------------------------*/
 #home{
-    height: 100%;
+    height: 100vh;
     background-color: #aba;
+
 }
 
 .padding{
@@ -99,35 +121,24 @@ nav{
     width: 70%;
 }
 
-.title{
+#home .title{
     font-weight: bold;
     text-transform: uppercase;
     font-size: 110px;
     line-height: 100px;
-
+    
 }
 
-.subtitle{
+#home .subtitle{
     text-align: right;
-    color: red; 
+    color: white; 
     position: relative;
-   
+    animation-delay: 1s;
  }
 
-hr{
-    
-    border-style: none;
-    border-top: 5px solid red;
-    padding: 10px 0;
-    margin-left: auto;
-    margin-right: auto;
-   width: 100%;
- }
-
-
-
-.info{
+ #home .info{
     padding-top: 50px;
+    animation-delay: 2s;
 }
 
 /*--------------------------------------------*/
@@ -139,92 +150,17 @@ hr{
 
 .row-item{
     padding: 10px;
-    overflow: scroll;
 }
  
-.row{
-    position: flex;
-    width: 100px;
-    height: 10px;
-}
-
-/*--------------------------------------------*/
-/*-----------------Projects--------------------*/
-/*--------------------------------------------*/
-
-
-html{
-    transition: 500ms;
-    scroll-behavior: smooth ;
-}
-
-
-
-
-a{
-    text-decoration: none;
-}
-
-.inline{ 
-    display: inline-block;
-}
-
-
-
-
-
-
-
-
-
-
-#connect{
-    padding: 100px 0px;
-    text-align: center;
-    font-size: 12px;
-    line-height: 22px;
-    display: block;
-    
-}
-
-.container{
-    width: 900px;
-    margin: auto;
-
-}
-
-.bold{
-    font-weight: bold;
-}
-
-
-.inline-block{
-    display: inline-block;
-}
-.background{
-    background-color: white;
-}
-
-table, td{
-    
+table, td{   
     border: 1px solid;
 }
   
 table {
-    
     width: 70vw;
+    height: 100px;
     border-collapse: collapse;
 }
-
-img{
-    width:100%;
-    height: 100%;
-    object-fit:cover;
-}
-
-
-
-
 
 .row-btn{
     float: right;
@@ -232,6 +168,15 @@ img{
 .row-btn:hover{
     background-color: #000;
     
+}
+
+/*--------------------------------------------*/
+/*-----------------Connect--------------------*/
+/*--------------------------------------------*/
+#connect{
+    padding: 100px 0px;
+    text-align: center;
+    background-color: white;
 }
 
 .logo{
@@ -243,10 +188,27 @@ img{
 }
 
 .logo:hover{
-    
     height: 50px;
 }
 
+
+/*--------------------------------------------*/
+/*-----------------Animation------------------*/
+/*--------------------------------------------*/
+
+.anim{
+    opacity: 0;
+    transform: translateY(30px);
+    animation: moveup 0.5s linear forwards;
+}
+
+@keyframes moveup {
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+    
+}
 
 
 /*--------css for small screens -----------*/
