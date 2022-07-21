@@ -121,7 +121,7 @@ nav{
     width: 70%;
 }
 
-#home .title{
+#home .title, .title{
     font-weight: bold;
     text-transform: uppercase;
     font-size: 110px;
@@ -129,14 +129,14 @@ nav{
     
 }
 
-#home .subtitle{
+#home .subtitle, .subtitle{
     text-align: right;
     color: white; 
     position: relative;
     animation-delay: 1s;
  }
 
- #home .info{
+ #home .info, .info{
     padding-top: 50px;
     animation-delay: 2s;
 }
