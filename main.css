@@ -285,7 +285,7 @@ table {
     /*---------------RESUME-----------------------*/
     /*--------------------------------------------*/
     .resume {
-        padding: 0px 10px 0px 0px;
+        padding: 0px 10px 0px;
         position: flex;
         z-index: 3;
         right: 0;
@@ -339,8 +339,8 @@ table {
     #home .title, .title{
         font-weight: bold;
         text-transform: uppercase;
-        font-size: 75px;
-        line-height: 75px;
+        font-size: 15vw;
+        line-height: 15vw;
     }
 
     #home .subtitle, .subtitle{
@@ -371,9 +371,7 @@ table {
     }
 
     table {
-        width: 70vw;
-        height: 10px;
-        border-collapse: collapse;
+        width: 100%;
     }
 
     .row-btn{
