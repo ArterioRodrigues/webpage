@@ -8,7 +8,10 @@
     font-size: 13px;
 }
 
-
+p {
+    padding-left: 10px;
+    position: relative;
+}
 
 .dracula {
     height: calc(100vh - 200px);
@@ -25,14 +28,24 @@
 
     width: 500px;
     margin: auto;
+
+    position: relative;
 }
 
 .tab{
     padding: 50px 0px; 
 }
 
+.dracula::before{
+    content:"🔴 🟡 🟢";
+    position: absolute;
+    top: -20px;
+}
 .code::before {
     content: "> ";
+    position: absolute;
+    left: 0px;
+    color: #8be9fd;
 }
 
 .under::after{
@@ -41,6 +54,15 @@
     color: #ff5555;
     border-bottom:solid 10px;
     animation: blinking 0.5s infinite  forwards;
+}
+
+.input{
+    margin-left: 10px;
+
+    background-color: #44475a;
+
+    border: none;
+    outline: none;
 }
 
 @keyframes blinking {
