@@ -58,12 +58,13 @@ p {
 
 .input{
     margin-left: 10px;
-
+    padding-right: 10px;
     background-color: #44475a;
 
     border: none;
     outline: none;
 }
+
 
 @keyframes blinking {
     0%{
