@@ -13,6 +13,7 @@ body {
     padding: 0;
     line-height: 1.5; /* Improved line spacing for readability */
     word-spacing: -3px;
+    color: var(--text-color);
 }
 
 .webpage {
