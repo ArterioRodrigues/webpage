@@ -1,0 +1,171 @@
+/* Base colors */
+:root {
+    --highlight-color: #874CCC; /* Lighter Purple for highlights and links */
+    --background-color: #181818; /* Dark Purple for backgrounds */
+    --text-color: #F2F2F2; /* White for text */
+    --hover-color: #524f4f;
+}
+
+body {
+    font-family: 'Consolas', sans-serif;
+    background-color: var(--background-color);
+    margin: 0;
+    padding: 0;
+    line-height: 1.6; /* Improved line spacing for readability */
+}
+
+.webpage {
+    margin: 5%; /* Basic responsive margin */
+}
+
+@media (max-width: 1400px) {
+    .webpage {
+        margin: 5%; /* Increased top/bottom margin for narrow screens */
+    }    
+}
+
+/* Larger margins for wider screens */
+@media (min-width: 1400px) {
+    .webpage {
+        margin: 2% 15%; /* Larger side margins for wider screens */
+    }
+}
+
+.title h1 {
+    color: var(--text-color);
+    margin: 0;
+    font-weight: 700;
+    font-size: 24px; /* Adjust heading size for phones */
+}
+
+.title {
+    text-align: center;
+}
+
+.title img {
+    border-radius: 50%; /* Adjust for circular image */
+    padding: 0;
+    width: 150px; /* Adjust image size for phones */
+}
+
+.nav {
+    list-style-type: none;
+    padding: 0;
+    text-align: center; /* Center align navigation for phones */
+}
+
+.nav li {
+    display: inline-block; /* Display navigation items horizontally for phones */
+    margin: 0 10px; /* Add space between navigation items */
+    color: var(--text-color); /* White text for readability */
+}
+
+.post, .projects, .books {
+    padding: 20px 0;
+}
+
+.post h2, .projects h2, .books h2 {
+    color: var(--text-color);
+    font-weight: 600;
+    margin: 0;
+    font-size: 20px; /* Adjust heading size for phones */
+}
+
+.date, .project_date {
+    font-size: 14px; /* Adjust date size for phones */
+    color: #666; /* Adjust date color */
+}
+
+.project {
+    padding: 10px;
+    margin: 5px 0; /* Add space between project items */
+    color: var(--text-color);
+    border-radius: 3%;
+    transition: transform 0.3s ease;
+}
+
+.project:hover {
+    background-color: var(--hover-color);
+    transform: scale(1.05);
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style-type: none;
+    color: var(--text-color); /* White text for items */
+}
+
+p {
+    padding: 10px;
+    border-radius: 5px;
+    color: var(--text-color); /* Maintaining white text for paragraphs */
+    font-size: 16px; /* Adjust paragraph size for phones */
+}
+
+.img {
+    width: 250px; /* Adjust image width for responsiveness */
+    height: 250px;
+    border-radius: 5px;
+    object-fit: cover;
+    object-position: center;
+}
+
+a {
+    color: var(--highlight-color);
+    text-decoration: none;
+    transition: transform 0.3s ease;
+}
+
+a:hover {
+    color: var(--text-color);
+    font-weight: bold;
+}
+
+#connect {
+    padding: 20px 0;
+    text-align: center;
+    background-color: var(--hover-color);
+}
+
+.logo {
+    width: auto;
+    height: 30px;
+    padding: 0 10px; /* Adjust padding for logo */
+    transition: all 0.3s ease;
+}
+
+.logo:hover {
+    height: 35px;
+}
+
+.tab {
+    display: inline-block;
+    padding: 0 5px; /* Adjust tab padding for phones */
+}
+
+.project_name {
+    font-weight: 600;
+}
+
+.projects .project {
+    display: inline-block; /* Adjust display for projects on phones */
+    margin: 0 auto 20px; /* Center projects and add space between them */
+}
+
+.resume {
+    background-color: var(--text-color);
+    border-radius: 5%;
+    padding: 0px 10px;
+    font-weight: bold;
+    transition: transform 0.3s ease;
+}
+
+.resume:hover{
+    background-color: var(--hover-color);
+    transform: scale(1.05);
+    color: var(--text-color);
+}

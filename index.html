@@ -2,134 +2,93 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="stylesheet" href="main.css">
-
-    <title>Arterio</title>
+    <link rel="stylesheet" href="temp.css">
+    <title>Arterio Rodrigues</title>
 </head>
 <body>
-   
-        <nav>
-            <ul>
-                <a href ='#home'>     <li> HOME</li></a> 
-                <a href ='#projects'> <li> PROJECTS</li></a>
-                <a href ='#connect'>  <li> CONNECT</li></a>
-            
-
-                <a class = 'resume' href="./asset/resume.pdf" download="resume">  
-                    <button class = "custom-btn  btn " type="button">MY RESUME</button>
-                </a>
+    <div class="webpage">
+        <div class="title">
+            <img src ='./assets/temp.jpg'></img>
+            <h1>Arterio Rodrigues</h1>
+            <ul class="nav">
+                <li><a href="#posts">Posts</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#books">Books</a></li>
+                <li><a href="#connect">Connect</a></li>
+                <li class = "resume"><a href="./assets/resume.pdf" target="_blank">Resume</a></li>
             </ul>
-        </nav>
-    
+        </div>
+
+        <div class="post" id="posts">
+            <h2>Posts</h2>
+            <ul>
+                <li><div class="tab"> </div><span class="date " >2024 May 01</span> <a href="https://medium.com/">Leetcode Journey </a></li>
+            </ul>
+        </div>
         
-    
-    
-    
-    <div id = 'home'>
-        <div class = 'padding'>
-            
-            <div class = 'subtitle anim'>
-                Computer Scientist
-              
-            </div>
-            
-
-            <h1 class = "title anim"> 
-                Hi, </br>
-                I'm Arterio </br> 
-                Rodrigues 
-            </h1>
-
-            <p class = "info anim">
-                I'm Arterio a teacher, mentor, and motivated computer science major 
-                with experience working with C++, Python, Javascript, React and Bash 
-                languages and multiple CI/CD pipelines. Knowledgable on full stack 
-                development with a express interest in front end development 
-                (Based in React). Excellent problem-solving and time managment 
-                skills. Please feel free to take a look at my projects below and on my github.
-                My resume can also be download at the top right. 
-                <br/><br/>
-                <strong>THANK YOU!</strong>
-            </p>
+        <div class="projects" id="projects">
+            <h2>Projects</h2>
+            <ul>
+                <li class="project">
+                    <a style="color: white" href ="https://github.com/ArterioRodrigues/wave_collapse-">
+                        <img class="img" src="./assets/wave_collapse.jpg" alt="Project Thumbnail">
+                        <div class = "project_name">Wave Collapse</div>
+                        <div>Algorithms</div>
+                        <div><span class="project_date"> 2023</span></div>
+                    </a>
+                </li>
+                <li class="project"> 
+                    <a style="color: white" href ="https://github.com/ArterioRodrigues/asm_game/tree/main/pong">
+                        <img class="img" src="./assets/pong_game.png" alt="Project Thumbnail">
+                        <div class = "project_name">Pong</div>
+                        <div>x86 asm</div>
+                        <div><span class="project_date"> 2022</span></div>
+                    </a>
+                </li>
+                <li class="project"> 
+                    <a style="color: white" href ="https://github.com/ArterioRodrigues/Scraper">
+                        <img class="img" src="./assets/web_scraper.png" alt="Project Thumbnail">
+                        <div class = "project_name">Web Scraper</div>
+                        <div>JS HTML CSS</div>
+                        <div><span class="project_date"> 2023</span></div>
+                    </a>
+                </li>
+            </ul>
         </div>
-    </div>
-    
-    <div style="background-color:#aba;">
-        <hr>
-    </div>
-    
 
-    <div id = 'projects'>
-        <div  class = 'padding'>
-            <div class = 'subtitle'>Projects</div>
-
-            <h1 class = "title"> 
-                My </br>
-                Projects
-            </h1>
-
-            <div class = "info ">
-                <table>
-                    <tr class = ''>
-                        <td class = "row-item"> 
-                            <p class = "bold">-- Toicator -- </p><br/>
-                            Have you ever been outside and you really needed to use the bathroom? Or that you didn't know that you had to buy something before using the bathroom? 
-                            Or if you walked into a really gross bathroom? Well- this app we built could help with that!
-                            <br/>
-                            The Toicator is a maps tool for users to find the nearest bathroom and filter their choices
-                            based on cleanliness, proof of purchase requirement, single stalled or multi-stalled.
-                            <br/><br/>
-                            This app used Swift, Googles Maps, and Firebase. 
-                            <a href="https://github.com/ArterioRodrigues/stock_prediction">  
-                                <button class = " btn row-btn" type="button">CODE</button>
-                            </a>                           
-                        </td>
-                       
-                    </tr>
-
-                    <tr class = ''>
-                        <td class = "row-item"> 
-                            <p class = "bold">-- Stock Market Prediction -- </p><br/>
-                            This is a python program that predicts upto 60 days for a given stock market ticker closing prices. The project used an LSTM model to make the prediction.
-                            The model was built on MSFT closing data from as far back as 2000-01-01 in which 80% of the data was used for predicting the other 20%. The data set was 
-                            transfored using scaler transform to account for a faster run time and easier computation. Once the model was created it was used to predict APPLE stock 
-                            for 60 days with a given error range of 8%. <br/><br/>
-                            This app used python, machine learning with tensorflow, matplotlib, numpy, and data collection with yfinance. 
-
-                            <a href="https://github.com/ArterioRodrigues/winter-2021-codefest-submissions-the-three-quaranteers.git">  
-                                <button class = "btn row-btn" type="button">CODE</button>
-                            </a>   
-                        </td>
-                    </tr>
-                </table>       
-            </div>
+        <div class="books" id="books">
+            <h2>Favorite Books</h2>
+            <ul>
+                <li><div class="tab"> </div> - - - <a href = "https://www.goodreads.com/en/book/show/7235533">The Way of Kings</a> by Brandon Sanderson</li>
+                <li><div class="tab"> </div> - - - <a href = "https://www.goodreads.com/book/show/178559201-cracking-the-coding-interview?from_search=true&from_srp=true&qid=I7gUdU4Nxf&rank=4">Cracking the coding interview</a> by Mcdowell</li>
+                <li><div class="tab"> </div> - - - <a href = "https://www.goodreads.com/book/show/33650313-machine-trading?from_search=true&from_srp=true&qid=g3IZ3PbPq9&rank=1">Machine Trading</a> by Ernest P. Chan</li>
+            </ul>
         </div>
     </div>
 
-    <div id = "connect" >
-        <div  >
 
-            <a href="https://github.com/ArterioRodrigues" target="blank">
-                <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="arteriorodrigues" class = "logo" />
-            </a>
-            
-            <a href="mailto: rodrigues.arterio@gmail.com" >
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Gmail_icon_%282020%29.svg/512px-Gmail_icon_%282020%29.svg.png?20201210105308" alt="arteriorodrigues" class = "logo" />
-            </a>
-            
-            <a href="https://www.linkedin.com/in/arterio-rodrigues-7559791ba/" target="blank">
-                <img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="arteriorodrigues" class = "logo" />
-            </a>
-            
-            <div style="padding-top: 20px;">
-                <p class = "bold inline-block" style="color: black ;" >Arterio Rodrgiues</p>
-                <p class = "inline-block" style="color: black ;" >--- Computer Scientist</p>
+        <div id = "connect" >
+            <div  >
+                <a href="https://github.com/ArterioRodrigues" target="blank">
+                    <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="arteriorodrigues" class = "logo" />
+                </a>
+                
+                <a href="mailto: rodrigues.arterio@gmail.com" >
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Gmail_icon_%282020%29.svg/512px-Gmail_icon_%282020%29.svg.png?20201210105308" alt="arteriorodrigues" class = "logo" />
+                </a>
+                
+                <a href="https://www.linkedin.com/in/arterio-rodrigues-7559791ba/" target="blank">
+                    <img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="arteriorodrigues" class = "logo" />
+                </a>
+                
+                <div>
+                    
+                </div>
             </div>
         </div>
-    </div>
-   <!--  -->
+  
 </body>
+
+
 </html>
