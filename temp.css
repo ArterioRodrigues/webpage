@@ -28,6 +28,9 @@ body {
         height: 150px;
         
     }
+    .resume{
+        padding: 0 20px;
+    }
 }
 
 /* Larger margins for wider screens */
@@ -36,11 +39,14 @@ body {
         margin: 2% 15%; /* Larger side margins for wider screens */
     }
     .img{
-        width: 250px; /* Adjust image width for responsiveness */
-    height: 250px;
-    border-radius: 5px;
-    object-fit: cover;
-    object-position: center;
+        width: 300px; /* Adjust image width for responsiveness */
+        height: 300px;
+        border-radius: 5px;
+        object-fit: cover;
+        object-position: center;
+    }
+    .resume{
+        padding: 0px 20px;
     }
 }
 
@@ -169,7 +175,6 @@ a:hover {
 .resume {
     background-color: var(--text-color);
     border-radius: 5%;
-    padding: 0px 10px;
     font-weight: bold;
     transition: transform 0.3s ease;
 }
